@@ -120,6 +120,7 @@ export const App = () => {
               onPress={handleIncrement}
             />
             <Text status='success' category='h1' style={{ textAlign: 'center' }} >{value}</Text>
+            <Text status='success' category='h1' style={{ textAlign: 'center' }} >{value}</Text>
             <KitButton
               title="Decrement"
               status="warning"

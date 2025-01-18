@@ -16,5 +16,9 @@
     "src/**/*.spec.jsx",
     "src/test-setup.ts"
   ],
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx"]
+   "include": [
+    "src/**/*",
+    "../../libs/ui-components/src/**/*",
+    "../../libs/ui-kit-theme/src/**/*"
+  ]
 }

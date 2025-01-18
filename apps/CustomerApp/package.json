@@ -1,0 +1,28 @@
+{
+  "name": "CustomerApp",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@react-native/metro-config": "^0.72.11",
+    "@testing-library/jest-native": "*",
+    "@testing-library/react-native": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-svg": "^13.9.0",
+    "metro-config": "^0.76.8",
+    "react-native-svg-transformer": "^1.1.0",
+    "@eva-design/eva": "*",
+    "@ui-kitten/components": "*",
+    "react-redux": "*",
+    "@reduxjs/toolkit": "*",
+    "@react-native-async-storage/async-storage": "*",
+    "redux-persist": "*",
+    "react-dom": "*",
+    "vite": "*",
+    "@vitejs/plugin-react": "*",
+    "@nx/vite": "*",
+    "esbuild": "*",
+    "@nx/react-native": "latest"
+  },
+  "devDependencies": {}
+}

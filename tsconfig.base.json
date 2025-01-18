@@ -13,8 +13,14 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-apps/store": ["libs/shared/store/src/index.ts"],
+      "@nx-apps/ui-components": ["libs/ui-components/src/index.ts"],
+      "@nx-apps/ui-kit-theme": ["libs/ui-kit-theme/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

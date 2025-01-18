@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import { Button, Input, InputProps, Layout, Toggle, Text } from '@ui-kitten/components';
+import { InputProps, Layout, Text } from '@ui-kitten/components';
 import { ApplicationProvider } from '@ui-kitten/components';
 import React, { useRef, useState } from 'react';
 import * as eva from '@eva-design/eva';
@@ -11,13 +11,11 @@ import {
   View,
   StatusBar,
   TouchableOpacity,
-  Linking,
 } from 'react-native';
-import Svg, { G, Path } from 'react-native-svg';
+import Svg, { Path } from 'react-native-svg';
 import { KitButton } from '@nx-apps/ui-kit-theme';
-import { decrement, increment, persistor, store, useAppDispatch, useAppSelector } from '@nx-apps/store';
-import { Provider } from 'react-redux';
-import { PersistGate } from 'redux-persist/es/integration/react';
+import { decrement, increment, useAppDispatch, useAppSelector } from '@nx-apps/store';
+
 
 
 export const App = () => {
@@ -45,7 +43,6 @@ export const App = () => {
     dispatch(decrement())
   }
 
-  const primaryInputState = useInputState();
 
   return (
 
@@ -119,7 +116,6 @@ export const App = () => {
               appearance="outline"
               onPress={handleIncrement}
             />
-            <Text status='success' category='h1' style={{ textAlign: 'center' }} >{value}</Text>
             <Text status='success' category='h1' style={{ textAlign: 'center' }} >{value}</Text>
             <KitButton
               title="Decrement"
